@@ -13,8 +13,15 @@
 </head>
 <body style="background-color:#35564a;">
 
-<img src="sinkercity.png" alt="coming soon">
+<p id="demo"></p>
 
-<script src="index.js"></script>
+<script>
+randomNum = Math.floor(Math.random() * 40);
+randomNum = randomNum + 1;
+console.log(randomNum)
+document.getElementById("demo").innerHTML = '<img src=' + randomNum + ".png>";
+</script>
+
+
 </body>
 </html>
